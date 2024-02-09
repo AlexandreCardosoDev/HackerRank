@@ -4,9 +4,9 @@ function bonAppetit(bill, k, b) {
     sum += bill[item]    
   }
   if ((sum - bill[k])/ 2 === b)
-    return 'Bon Appetit'
+    console.log('Bon Appetit')
   else 
-    return (b - ((sum - bill[k])/ 2))
+    console.log((b - ((sum - bill[k])/ 2)))
 }
 
-console.log(bonAppetit([3,10,2,9],1,7))
+bonAppetit([3,140,2,9],2,7)
